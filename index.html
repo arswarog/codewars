@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Битвы ботов</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/routes.js"></script>
+        <script src="js/directives.js"></script>
     </head>
-    <body>
-        <div style="border: 1px solid green">
-            <canvas id="cnv" width="500" height="375"></canvas>
+    <body ng-app="app">
+        <div style="border: 1px solid green" ng-controller="BattleCtrl">
+            <battlemap battle="battle" width="500" height="400" loading="loading" time="time"></battlemap>
+            <div>
+                <button ng-click="prev()">prev</button>
+                <a>{{time}}</a>
+                <button ng-click="next()">next</button>
+            </div>
         </div>
-        <script src="js/main.js"></script>
     </body>
 </html>

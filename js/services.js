@@ -30,8 +30,10 @@ angular.module('app.services', [])
               world[i] = [];
             for (var j = 0; j < y; j++)
             {
+              if (typeof base[i] === 'undefined')
+                base[i] = [];
               if (typeof base[i][j] === 'undefined')
-                base_world[i][j] = false;
+                base_world[i][j] = 'brick';
               else
                 base_world[i][j] = base[i][j];
               world[i][j] = base_world[i][j];
@@ -48,8 +50,6 @@ angular.module('app.services', [])
         {
           for (var t in steps)
             movie[t] = steps[t];
-
-          console.log(movie);
         }
 
         ///***********************
@@ -77,8 +77,6 @@ angular.module('app.services', [])
             apply(movie[time]['_old'], movie[time]);
           }
           time--;
-
-          console.log(movie);
         }
 
         ///***********************
@@ -95,8 +93,6 @@ angular.module('app.services', [])
           var old = movie[time]['_old'];
 
           apply(movie[time], movie[time]['_old']);
-
-          console.log(movie);
         }
 
         ///***********************
@@ -133,13 +129,13 @@ angular.module('app.services', [])
                     n: tanks[p[0]].n
                   }
                 }
-                console.log(val);
                 tanks[p[0]].x = val.x;
                 tanks[p[0]].y = val.y;
                 tanks[p[0]].n = val.n;
                 break;
               default:
                 console.log("[Battle] Unknown command: " + item)
+                console.log(val);
             }
           }
         }

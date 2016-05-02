@@ -20,37 +20,53 @@ function BattleCtrl($scope, $rootScope, Battle) {
     draw();
   }
 
-  $scope.battle.init(10, 10, [
-    ['steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel'],
-    ['steel', 'forest', 'forest', 'forest', 'forest', 'forest', 'forest', 'forest', 'forest', 'steel'],
-    ['steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel'],
-    ['steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel'],
-    ['steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel'],
-    ['steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel'],
-    ['steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel'],
-    ['steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel'],
-    ['steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel'],
-    ['steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel'],
-    ['steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel'],
-    ['steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel'],
-    ['steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel', 'steel'],
+  $scope.battle.init(15, 12, [
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'forest', 'forest', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'forest', 'forest', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'forest', 'forest', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'forest', 'forest', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick'],
+    ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'steel'],
   ], {
-    't0': {x: 2, y: 2, n: 0},
-    't1': {x: 5, y: 5, n: 1},
-    't2': {x: 2, y: 2, n: 2}
+    't0': {x: 0, y: 0, n: 1},
+    't1': {x: 8, y: 0, n: 3},
+    't2': {x: 4, y: 8, n: 0}
   });
   $scope.battle.addMovie({
     1: {
-      'w5_5': 'forest'
+      w3_7: 'steel',
+      t0: {x: 1, y: 0, n: 1},
+      t1: {x: 7, y: 0, n: 3}
     },
     2: {
-      'w6_5': 'forest'
+      w4_7: 'steel',
+      t0: {x: 2, y: 0, n: 1},
+      t1: {x: 6, y: 0, n: 3}
     },
     3: {
-      'w6_6': 'forest'
+      w5_7: 'steel',
+      t0: {x: 2, y: 0, n: 2},
+      t1: {x: 6, y: 0, n: 2}
     },
     4: {
-      'w5_6': 'forest'
+      w6_7: 'steel',
+      t0: {x: 2, y: 1, n: 2},
+      t1: {x: 6, y: 1, n: 2}
     },
   })
 }

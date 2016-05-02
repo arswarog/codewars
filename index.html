@@ -13,7 +13,7 @@
     </head>
     <body ng-app="app">
         <div style="border: 1px solid green" ng-controller="BattleCtrl">
-            <battlemap battle="battle" width="500" height="400" loading="loading" time="time"></battlemap>
+            <battlemap battle="battle" size-x="15" size-y="12" zoom="1" loading="loading" time="time"></battlemap>
             <div>
                 <button ng-click="prev()">prev</button>
                 <a>{{time}}</a>

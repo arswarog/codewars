@@ -62,8 +62,6 @@ angular.module('app.services', [])
         ///***********************
         /// Вперед на один шаг
         function prev() {
-          console.log('prev ' + time);
-
           if (time <= 0)
             return false;
 

@@ -44,29 +44,29 @@ function BattleCtrl($scope, $rootScope, Battle) {
     ['brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'brick', 'steel'],
   ], {
     't0': {x: 0, y: 0, n: 1},
-    't1': {x: 8, y: 0, n: 3},
-    't2': {x: 4, y: 8, n: 0}
+    't1': {x: 14, y: 0, n: 3},
+    't2': {x: 8, y: 11, n: 0}
   });
   $scope.battle.addMovie({
     1: {
-      w3_7: 'steel',
+      w7_10: 'steel',
       t0: {x: 1, y: 0, n: 1},
-      t1: {x: 7, y: 0, n: 3}
+      t1: {x: 13, y: 0, n: 3}
     },
     2: {
-      w4_7: 'steel',
+      w9_10: 'steel',
       t0: {x: 2, y: 0, n: 1},
-      t1: {x: 6, y: 0, n: 3}
+      t1: {x: 12, y: 0, n: 3}
     },
     3: {
-      w5_7: 'steel',
+      w6_10: 'steel',
       t0: {x: 2, y: 0, n: 2},
-      t1: {x: 6, y: 0, n: 2}
+      t1: {x: 12, y: 0, n: 2}
     },
     4: {
-      w6_7: 'steel',
+      w10_10: 'steel',
       t0: {x: 2, y: 1, n: 2},
-      t1: {x: 6, y: 1, n: 2}
+      t1: {x: 12, y: 1, n: 2}
     },
   })
 }
